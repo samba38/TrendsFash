@@ -1,0 +1,38 @@
+/* Write your CSS here */
+
+.summary-cart-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.summary-heading {
+  color: #616e7c;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.summary-span {
+  color: #171f46;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.summary-paragraph {
+  color: #616e7c;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.summary-btn {
+  background-color: blue;
+  color: white;
+  height: 40px;
+  width: 180px;
+  border-width: 0px;
+  border-radius: 10px;
+}
