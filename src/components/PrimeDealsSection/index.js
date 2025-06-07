@@ -24,10 +24,6 @@ class PrimeDealsSection extends Component {
   }
 
   getPrimeDeals = async () => {
-    this.setState({
-      apiStatus: apiStatusConstants.inProgress,
-    })
-
     const jwtToken = Cookies.get('jwt_token')
 
     const apiUrl = 'https://apis.ccbp.in/prime-deals'
@@ -48,9 +44,9 @@ class PrimeDealsSection extends Component {
         imageUrl: product.image_url,
         rating: product.rating,
       }))
+      console.log(updatedData)
       this.setState({
         primeDeals: updatedData,
-        apiStatus: apiStatusConstants.success,
       })
     }
     if (response.status === 401) {
@@ -91,12 +87,8 @@ class PrimeDealsSection extends Component {
   render() {
     const {apiStatus} = this.state
     switch (apiStatus) {
-      case apiStatusConstants.success:
-        return this.renderPrimeDealsListView()
       case apiStatusConstants.failure:
         return this.renderPrimeDealsFailureView()
-      case apiStatusConstants.inProgress:
-        return this.renderLoadingView()
       default:
         return null
     }

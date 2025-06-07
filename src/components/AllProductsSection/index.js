@@ -227,7 +227,12 @@ class AllProductsSection extends Component {
   }
 
   render() {
-    const {activeCategoryId, searchInput, activeRatingId} = this.state
+    const {
+      activeCategoryId,
+      searchInput,
+      activeRatingId,
+      productsList,
+    } = this.state
 
     return (
       <div className="all-products-section">
