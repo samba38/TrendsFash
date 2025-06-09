@@ -40,6 +40,7 @@ const CartItem = props => (
                 type="button"
                 className="quantity-controller-button"
                 onClick={onClickDecrese}
+                data-testid="minus"
               >
                 <BsDashSquare color="#52606D" size={12} />
               </button>
@@ -48,6 +49,7 @@ const CartItem = props => (
                 type="button"
                 className="quantity-controller-button"
                 onClick={onClickIncrease}
+                data-testid="plus"
               >
                 <BsPlusSquare color="#52606D" size={12} />
               </button>
@@ -58,6 +60,7 @@ const CartItem = props => (
                 className="remove-button"
                 type="button"
                 onClick={onRemoveCartItem}
+                data-testid="remove"
               >
                 Remove
               </button>

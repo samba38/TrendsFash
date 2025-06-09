@@ -1,0 +1,57 @@
+.payment-container {
+  height: 400px;
+  width: 100%;
+}
+
+.payment-details-head {
+  color: black;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.payment-method-par {
+  color: #37474f;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.input-radio {
+  padding: 5px;
+}
+
+.input-list-container {
+  list-style-type: none;
+}
+
+.label-input {
+  color: #37474f;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.payment-order-par {
+  color: #37474f;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.btn-payment {
+  background-color: blue;
+  color: white;
+  height: 40px;
+  width: 90px;
+  border-radius: 10px;
+  border-width: 0px;
+  font-size: 12px;
+}
+
+.payment-par{
+   color: #37474f;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+}
